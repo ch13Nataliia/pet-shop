@@ -518,7 +518,7 @@ footer .copyright {
 
 #page-header h2,
 #page-header p {
-  color: #252323;
+  color: #fff;
 }
 
 #pagination {
@@ -601,6 +601,71 @@ footer .copyright {
   line-height: 25px;
 }
 
+/*  Blog Page */
+#page-header.blog-header {
+  background-image: url('/images/banner/facts-banner.jpg');
+}
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog-details {
+  width: 50%;
+}
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color: #8ecfb1;
+}
+
+#blog .blog-details a:hover::after {
+  background-color: #8ecfb1;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c5d0cb;
+  z-index: -9;
+}
 /* Media Query */
 @media (max-width: 799px) {
   .section-p1 {
@@ -694,7 +759,7 @@ footer .copyright {
     padding: 20px 50px;
   }
   #header {
-    padding: 20px 15px;
+    padding: 20px 40px;
   }
 
   h1 {
@@ -741,18 +806,38 @@ footer .copyright {
   footer .one {
     width: 100%;
   }
-
-  /*  Single product */
+  /* single product */
   #pro-details {
     display: flex;
     flex-direction: column;
   }
+
   #pro-details .single-pro-image {
     width: 100%;
     margin-right: 0px;
   }
 
-  #pro-details .single-pro-details {
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+
+  /* Blog Page */
+
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #blog .blog-details {
     width: 100%;
   }
 }
