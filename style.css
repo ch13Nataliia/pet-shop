@@ -319,8 +319,7 @@ body {
 
 #sm-banner {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #sm-banner .banner-box {
@@ -361,19 +360,12 @@ body {
   border: 1px solid #465b52;
 }
 
-#banner3 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 80px;
-}
 #banner3 .banner-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-image: url('/images/banner/grass.jpg');
-  min-width: 30%;
   height: 30vh;
   background-size: cover;
   background-position: center;
@@ -381,17 +373,10 @@ body {
   margin-bottom: 20px;
 }
 
-#banner3 .banner-box2 {
-  background-image: url('images/banner/fleas-banner.jpg');
-}
-#banner3 .banner-box3 {
-  background-image: url('images/banner/banner-travel.jpg');
-}
-
 #banner3 h2 {
   color: #fff;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 35px;
 }
 #banner3 h3 {
   color: #fff;
@@ -909,6 +894,8 @@ footer .copyright {
 }
 
 /* Media Query */
+
+
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -1003,7 +990,14 @@ footer .copyright {
     margin: 30px auto 0 auto;
   }
 }
+/* Home page */
+.section-p1 {
+  padding: 10;
+}
 
+#banner3 .banner-box {
+  width: 100%;
+}
 /* Contact Page */
 #form-details {
   padding: 40px;
